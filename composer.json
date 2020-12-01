@@ -1,0 +1,29 @@
+{
+	"name": "akhaled/select-country",
+	"description": "Select country with Select2",
+	"type": "library",
+	"require": {
+		"rinvex/countries": "^6.1"
+	},
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Amro Khaled",
+			"email": "i@akhaled.com",
+			"homepage": "http://akhaled.com",
+			"role": "Developer"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Akhaled\\SelectCountry\\": "src"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Akhaled\\SelectCountry\\ServiceProvider"
+			]
+		}
+	}
+}
