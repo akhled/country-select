@@ -2,7 +2,11 @@
     $(document).ready(function() {
         const selector = '.akhaled-select-country';
 
-        $(selector).select2()
+        $(selector).select2({
+            placeholder: "Select a country",
+        }).on('select2:opening', function(e) {
+            $(this).data('select2').$dropdown.find(':input.select2-search__field').attr('placeholder', 'Search..')
+        });
         // $(document).delegate(selector, 'select2:select', whenOptionSelected)
     });
 

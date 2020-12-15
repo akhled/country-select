@@ -1,0 +1,15 @@
+/**
+ * Normalize select2
+ */
+
+.select2-container--default .select2-selection--single {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+.select2-dropdown {
+    background-color: white;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}

@@ -5,7 +5,6 @@ Laravel package to select countries single or multiple using [select2](https://s
 - [Installation](#installation)
 - [How to use](#how-to-use)
 - [Events](#events)
-  - [example](#example)
 
 ## Installation
 
@@ -47,7 +46,7 @@ Then add `Akhaled\SelectCountry\ServiceProvider::class` to `config/app.php` prov
 
 You can use [select2 event](https://select2.org/programmatic-control/events) by listening to element class `.akhaled-select-country`
 
-### example
+### example <!-- omit in toc -->
 
 ```blade
 <div>
@@ -56,7 +55,7 @@ You can use [select2 event](https://select2.org/programmatic-control/events) by 
 </div>
 
 <script>
-    $(document).delegate($('.akhaled-select-country'), 'select2:select', function(e) {
+    $(document).delegate('.akhaled-select-country', 'select2:select', function(e) {
         let country = $(e.params.data.element).data('country')
         $('#country-code').text(`+${country.calling_code}`);
     });
